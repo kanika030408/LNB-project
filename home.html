@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>url test</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+
+
+</head>
+<body>
+    <div class="login">
+
+        <h1>Phishing Domain Detection</h1>
+        <h2>Machine Learning Model</h2>
+
+        <!-- Main Input For Receiving Query to our ML Code -->
+        <form action="{{ url_for('prediction')}}"method="post">
+            <input type="text" name="inputUrl" placeholder="enter the url" required="required" />
+            <button type="submit" class="btn btn-primary btn-block btn-large">result</button>
+        </form>
+
+        <br><br>
+        {{ Result }}
+
+
+        <br><br>
+            <h4>Aman Sharma</h4>
+            <ul class="nav">
+            <li class="nav-item"><a href="https://www.facebook.com/profile.php?id=100046719370066" target="_blank"><i class="fa fa-facebook fa-lg"></i></i></a></li>
+            <li class="nav-item"><a href="https://www.linkedin.com/in/amansetu/" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a></li>
+            <li class="nav-item"><a href="https://github.com/amansetu03" target="_blank"><i class='fa fa-github'></i></a></li>
+            <li class="nav-item"><a href="https://www.instagram.com/it__aman._/" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
+            </ul>
+            <br>
+    </div>
+    
+</body>
+</html>

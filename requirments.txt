@@ -1,0 +1,6 @@
+numpy
+pandas
+flask
+urllib
+re
+tensorflow
